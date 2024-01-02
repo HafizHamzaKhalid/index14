@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variable practice</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: var(--secondary-color);
+        }
+        /* :root{
+            --primary-color:rgb(82, 143, 235);
+            --text-color:white;
+            --secondary-color:rgb(162, 136, 207);
+        } */
+        :root{
+            --primary-color:rgb(5, 27, 61);
+            --text-color:rgb(250, 249, 249);
+            --secondary-color:rgb(84, 57, 131);
+        }
+        nav{
+            background-color: var(--primary-color);
+            padding: 22px 0px;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 34px;
+            font-weight: bold;
+            /* color: var(--text-color); */
+        }
+        ul li a{
+            text-decoration: none;
+            color: var(--text-color);
+
+        }
+        /* ul{
+            background-color: aqua;
+            padding: 12px 0px;
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</li>
+                <li><a href="/">Contact</a></li>
+                <li><a href="/">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
